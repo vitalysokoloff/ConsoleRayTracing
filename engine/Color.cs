@@ -2,7 +2,13 @@ namespace ConsoleRT;
 
 public class Color
 {
-    public char Value {get;}
+    public char Value 
+    {
+        get
+        {
+            return _value;
+        }
+    }
 
     protected char _value;
 

@@ -4,7 +4,15 @@ public class Vector3
 {
     public float X { get; private set; }
     public float Y { get; private set; }
-    public float Z { get; private set; }        
+    public float Z { get; private set; } 
+
+    public static Vector3 Zero
+    {
+        get
+        {
+            return new Vector3(0, 0, 0);
+        }
+    }       
 
     public Vector3()
     {
@@ -33,6 +41,11 @@ public class Vector3
     public static Vector3 operator * (Vector3 a, float b)
     {
         return new Vector3 { X = a.X * b, Y = a.Y * b, Z = a.Z * b };
+    }
+
+        public static Vector3 operator / (Vector3 a, float b)
+    {
+        return new Vector3 { X = a.X / b, Y = a.Y / b, Z = a.Z / b };
     }
 
     public static float operator * (Vector3 a, Vector3 b)

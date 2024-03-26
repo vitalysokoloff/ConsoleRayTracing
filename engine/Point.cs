@@ -5,6 +5,11 @@ public class Point
     public int X { get; private set; }
     public int Y { get; private set; }
 
+    /// <summary>
+    /// Как вектор2, но с интами вместо флоатов
+    /// </summary>
+    /// <param name="x"></param>
+    /// <param name="y"></param>
     public Point(int x, int y)
     {
         X = x;

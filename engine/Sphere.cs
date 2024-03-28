@@ -30,7 +30,7 @@ public class Sphere : IHitable
 
     public Sphere()
     {
-        _center = new Vector3(0, 0, -1);
+        _center = new Vector3(0, 0, 0);
         _radius = 0.5f;
         _color = new Vector3(1, 0, 0);
     }
